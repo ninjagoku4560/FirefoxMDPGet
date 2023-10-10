@@ -2,7 +2,7 @@ import shutil,sys,time,random
 from pathlib import Path
 
 #mets dans cette variable ton nom d'utilisateur (va dans C:\Users pour le trouver)
-NomDUtilisateur = "natha"
+NomDUtilisateur = "user"
 
 
 
