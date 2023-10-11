@@ -1,6 +1,6 @@
 # Pyrus
 ----
-* [Comment l'utiliser](#Comment-l'utiliser)
+* [Comment l'utiliser](#Comment-lutiliser)
 * [Comment le lancer](#Comment-le-lancer)
 
 ----
@@ -19,5 +19,8 @@ Mettez le nom de ce dossier dans la variable
 
 Cette deuxième variable est le nom du dossier dans lequel est stocké votre profil firefox.
 Pour le trouver aller dans "%APPDATA%\Mozilla\Firefox\Profiles" puis mettez le nom du dossier contenant vos données. Le nom est une suite aléatoire de lettres suivie du texte ".default-release".
+
 ### Comment le lancer
-Pour l'exécuter, vérifiée que vous avez bien entré les variables, puis exécuter le script.
+Pour l'exécuter, **vérifiée que vous avez bien entré les variables**, puis exécuter le script.
+Laissez le script chercher les fichiers contenant les mots de passes puis lorsque c'est fini,
+entrer le nombre du profile que vous voulez décrypter.
